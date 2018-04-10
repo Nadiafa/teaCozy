@@ -1,4 +1,4 @@
-body {
+body, header {
   font-family: Helvetica;
   font-size: 22px;
   color: seashell;
@@ -6,4 +6,32 @@ body {
   opacity: 0.9;
   margin: 0 auto;
   padding: 0;
+}
+
+/*HEADER*/
+
+.header {
+  border-bottom: 1px solid seashell;
+  background-color: inherit;
+  position: fixed;
+  z-index: 0;
+  top: 0px;
+  height: 69px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  margin: 0 10px;
+  height: 50px;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+nav a {
+  color: seashell;
+  margin-left: 20px;
 }
