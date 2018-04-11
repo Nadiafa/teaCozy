@@ -38,16 +38,34 @@ nav a {
 
 /*MAIN CONTENT*/
 
+h2{
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+h4 {
+  margin-top: 20px;
+}
+
+
   /*MISSION*/
-  .main {
-    margin-left: 50px;
-    margin-right: 50px;
-  }
 .mission {
-  width: 1200;
+  width: 1200px;
   height: 700px;
   background-image: url("../images/mission-background.jpeg");
   margin-top: 70px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.headings {
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.mission .headings {
+  position: absolute;
+  top: 370px;
+  width: 1200px;
+  background-color: black;
 }
 
 /*
