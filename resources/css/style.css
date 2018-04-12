@@ -9,7 +9,6 @@ body, header {
 }
 
 /*HEADER*/
-
 .header {
   border-bottom: 1px solid seashell;
   background-color: inherit;
@@ -37,122 +36,108 @@ nav a {
 }
 
 /*MAIN CONTENT*/
-
+  /* SECTION HEADINGS*/
 h2{
   font-size: 1.5em;
-  margin-top: 10px;
+  padding-top: 10px;
+  text-align: center;
 }
-h4 {
-  margin-top: 20px;
+.top-heading h2 {
+  margin-top: 300px;
+  background-color: black;
 }
-
+.headings h2 {
+  padding-top: 30px;
+}
+h4, h5 {
+  text-align: center;
+  margin-bottom: 0;
+}
 
   /*MISSION*/
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
 .mission {
+  background-image: url("../images/mission-background.jpeg");
   width: 1200px;
   height: 700px;
-  background-image: url("../images/mission-background.jpeg");
   margin-top: 70px;
   margin-left: 40px;
   margin-right: 40px;
 }
-.headings {
-  justify-content: center;
-  text-align: center;
-  flex-wrap: wrap;
-}
-.mission .headings {
-  position: absolute;
-  top: 370px;
-  width: 1200px;
+.top-heading {
   background-color: black;
 }
 
-/*
-<div class="mission"  id="mission">
-  <div class="headings">
-    <h2>Our Mission</h2>
-    <h4>Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</h4>
-  </div>
-</div>
-*/
-  /*TEAOFTHEMONTH*/
-/*
-<div class="teaOfTheMonth" id="teaOfTheMonth">
-  <div class="headings">
-    <h2>Tea of the Month</h2>
-    <h4>What's Steeping at The Tea Cozy?</h4>
-  </div>
-  <div class="products">
-    <div class="item">
-      <img src="resources/images/berryblitz.jpeg" alt="Fall Berry Blitz Tea">
-      <span>Fall Berry Blitz Tea</span>
-    </div>
-    <div class="item">
-      <img src="resources/images/spiced-rum.jpeg" alt="Spiced Rum Tea">
-      <span>Spiced Rum Tea</span>
-    </div>
-    <div class="item">
-      <img src="resources/images/donut.jpeg" alt="Seasonal Donuts">
-      <span>Seasonal Donuts</span>
-    </div>
-    <div class="item">
-      <img src="resources/images/myrtle-ave.jpeg" alt="Myrtle Ave Tea">
-      <span>Myrtle Ave Tea</span>
-    </div>
-    <div class="item">
-      <img src="resources/images/bedford-bizarre.jpeg" alt="Bedford Bizarre Tea">
-      <span>Bedford Bizarre Tea</span>
-    </div>
-  </div>
-</div>
-*/
-  /*LOCATIONS*/
-/*
-<div class="locations" id="locations">
-  <div class="headings">
-    <h2>Locations</h2>
-  </div>
-  <div class="location">
-    <div class="address">
-      <h3>Downtown</h3>
-      <p>384 West 4th St</p>
-      <p>Suite 108</p>
-      <p>Portland, Maine</p>
-    </div>
-    <div class="address">
-      <h3>East Bayside</h3>
-      <p>3433 Phisherman's Avenue</p>
-      <p>(Northwest Corner)</p>
-      <p>Portland, Maine</p>
-    </div>
-    <div class="address">
-      <h3>Oakdale</h3>
-      <p>515 Crescent Avenue</p>
-      <p>Second Floor</p>
-      <p>Portland, Maine</p>
-    </div>
-  </div>
-</div>
-*/
-  /*CONTACT*/
-/*
-<div class="contact">
-  <div class="headings">
-    <h2>The Tea Cozy</h2>
-    <div class="contactDetails">
-      <span>contact@theteacozy.com</span>
-      <span>917-555-8904</span>
-    </div>
-  </div>
-</div>
-*/
-
-
-
-
-
+  /*TEA OF THE MONTH*/
+.tea {
+  width: 1000px;
+}
+.products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
 .item img {
   width: 300px;
   height: 200px;
+}
+.item span {
+  margin-top: 10px;
+}
+
+  /*LOCATIONS*/
+.locations {
+  background-image: url("../images/locations-background.jpeg");
+  width: 1200px;
+  height: 500px;
+  margin-top: 70px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.location {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.address {
+  background-color: black;
+  width: 300px;
+  height: 300px;
+  margin: auto 40px;
+  text-align: center;
+  opacity: 1;
+}
+.address p {
+  padding-top: 20px;
+}
+
+/*CONTACT*/
+.contact {
+  height: 200px;
+}
+.contactDetails span {
+  display: block;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.bottom-heading {
+  position: relative;
+  bottom: 30px;
+}
+
+/*FOOTER*/
+.copyright {
+  margin-left: 20px;
 }
